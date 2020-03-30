@@ -10,12 +10,16 @@ class App extends React.Component {
     new WOW().init();
   }
 
+  handleScroll=()=>{
+    
+  }
+
   render() {
     return (
 
       <>
         <div class='about-banner-sec'>
-          <Navbar collapseOnSelect fixed="top" expand="lg" bg="black" variant="dark">
+          <Navbar collapseOnSelect fixed="top" expand="lg" bg="black" onScroll={this.handleScroll()} variant="dark">
             <Navbar.Brand href="#home">
               <img
                 src={IMAGES.logo}
@@ -45,7 +49,6 @@ class App extends React.Component {
             <div class="containerDiv">
               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <h1>Welcome</h1>
-                <div class="about-banner-text-divide"></div>
                 <p>We integrate tech expertise and business intelligence which combines with our role as one of the most trusted consultants for Indian business clients.</p>
               </div>
             </div>

@@ -1,5 +1,6 @@
 
 .container{
+  margin-top:1%;
 }
 
 .uni {
@@ -16,10 +17,16 @@ height: 15%;
   text-align: center;
   font-family: 'Nunito', sans-serif;
   max-width: 900px;
-  color:white;
   margin: auto;
   padding-top: 130px;
   position: fixed;
+}
+
+.about-banner-text-divide {
+  background-color: white;
+  height: 1px;
+  width: 100px;
+  margin: 25px auto;
 }
 
 
@@ -28,7 +35,6 @@ height: 15%;
   width: 100%;
   margin: auto;
   max-width: 1250px;
-  color: white;
 }
 
 .about-banner-sec{
@@ -36,19 +42,21 @@ height: 15%;
     background-size: cover;
     height: 350px;
     position: relative;
-    animation: 10s scale infinite linear;;
+    animation: 120s scale infinite linear;;
     background-repeat: repeat-x;
 }
 
 @keyframes scale {
-  from {left: 0px;}
-  to {left: 1250px;}
+  100% {
+    background-position: -5000px 20%, -800px 95%, 500px 0, 1000px 100%, 400px 0;
+}
 }
 
 .about-banner-text {
-  text-align: center;
-  font-family: 'Nunito', sans-serif;
-  max-width: 900px;
-  margin: auto;
-  padding-top: 130px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 130px;
+    color:white;
 }
