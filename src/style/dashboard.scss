@@ -1,5 +1,5 @@
+
 .container{
-    margin-top: 50% ;
 }
 
 .uni {
@@ -9,5 +9,48 @@
 
 .navbar{
 background: rgba(0, 0, 0, 0.7);
-height: 20%;
+height: 15%;
+}
+
+.about-banner-text {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  max-width: 900px;
+  color:white;
+  margin: auto;
+  padding-top: 130px;
+  position: fixed;
+}
+
+
+.containerDiv {
+  width: 100%;
+  margin: auto;
+  max-width: 1250px;
+  position: absolute;
+  top: 90px;
+  left: 90px;
+  z-index: 2;
+}
+
+.about-banner-sec{
+    background-image: url(../images/img5.jpg);
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    animation: 10s scale infinite linear;;
+    background-repeat: repeat-x;
+}
+
+@keyframes scale {
+  from {left: 0px;}
+  to {left: 1000px;}
+}
+
+.about-banner-text {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 130px;
 }
