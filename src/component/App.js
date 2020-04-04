@@ -40,7 +40,7 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <div class="about-banner-text wow fadeInDown" data-wow-duration="2s"
+          <div class="about-banner-text wow fadeInUp" data-wow-duration="2s"
             style={{
               visibility: 'visible',
               animationDuration: '2s',
@@ -57,53 +57,96 @@ class App extends React.Component {
         <Container>
           <CardColumns>
             <div className='col_half'>
-              <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+              <div class="wow fadeInUp" data-wow-duration="2s">
                 <Card >
                   <Card.Img variant="top" src={IMAGES.img1} />
                 </Card>
               </div>
-              <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s">
+              <div class="wow fadeInUp" data-wow-duration="2s">
                 <Card >
                   <Card.Img variant="top" src={IMAGES.img2} />
                 </Card>
               </div>
-              <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="4s">
+              <div class="wow fadeInUp" data-wow-duration="2s">
                 <Card >
                   <Card.Img variant="top" src={IMAGES.img3} />
                 </Card>
               </div>
-            </div>
-            <div className='col_third'>
-              <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+              <div class="wow fadeInUp" data-wow-duration="2s">
                 <Card >
-                  <Card.Img variant="top" src={IMAGES.img4} />
+                  <Card.Img variant="top" src={IMAGES.img1} />
                 </Card>
               </div>
-              <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s">
+              <div class="wow fadeInUp" data-wow-duration="2s">
                 <Card >
-                  <Card.Img variant="top" src={IMAGES.img5} />
+                  <Card.Img variant="top" src={IMAGES.img2} />
                 </Card>
               </div>
-              <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="4s">
+              <div class="wow fadeInUp" data-wow-duration="2s">
                 <Card >
-                  <Card.Img variant="top" src={IMAGES.img6} />
+                  <Card.Img variant="top" src={IMAGES.img3} />
                 </Card>
               </div>
-            </div>
-            <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
-              <Card >
-                <Card.Img variant="top" src={IMAGES.img4} />
-              </Card>
-            </div>
-            <div class="wow fadeInUp" data-wow-delay="2s" data-wow-duration="2s">
-              <Card >
-                <Card.Img variant="top" src={IMAGES.img5} />
-              </Card>
-            </div>
-            <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="4s">
-              <Card >
-                <Card.Img variant="top" src={IMAGES.img6} />
-              </Card>
+              <div class="wow fadeInUp" data-wow-duration="2s">
+                <Card >
+                  <Card.Img variant="top" src={IMAGES.img3} />
+                </Card>
+              </div>
+              <div class="wow fadeInUp" data-wow-duration="2s">
+                <Card >
+                  <Card.Img variant="top" src={IMAGES.img3} />
+                </Card>
+              </div>
+              <div class="wow fadeInUp" data-wow-duration="2s">
+                <Card >
+                  <Card.Img variant="top" src={IMAGES.img3} />
+                </Card>
+              </div>
+              <div class="wow fadeInUp" data-wow-duration="2s">
+                <Card >
+                  <Card.Img variant="top" src={IMAGES.img3} />
+                </Card>
+              </div>
+              <div class="wow fadeInUp" data-wow-duration="2s">
+                <Card >
+                  <Card.Img variant="top" src={IMAGES.img3} />
+                </Card>
+              </div>
+              <div class="wow fadeInUp" data-wow-duration="2s">
+                <Card >
+                  <Card.Img variant="top" src={IMAGES.img3} />
+                </Card>
+              </div>
+              <div class="wow fadeInUp" data-wow-duration="2s">
+                <Card >
+                  <Card.Img variant="top" src={IMAGES.img3} />
+                </Card>
+              </div>
+              <div class="wow fadeInUp" data-wow-duration="2s">
+                <Card >
+                  <Card.Img variant="top" src={IMAGES.img3} />
+                </Card>
+              </div>
+              <div class="wow fadeInUp" data-wow-duration="2s">
+                <Card >
+                  <Card.Img variant="top" src={IMAGES.img3} />
+                </Card>
+              </div>
+              <div class="wow fadeInUp" data-wow-duration="2s">
+                <Card >
+                  <Card.Img variant="top" src={IMAGES.img3} />
+                </Card>
+              </div>
+              <div class="wow fadeInUp" data-wow-duration="2s">
+                <Card >
+                  <Card.Img variant="top" src={IMAGES.img3} />
+                </Card>
+              </div>
+              <div class="wow fadeInUp" data-wow-duration="2s">
+                <Card >
+                  <Card.Img variant="top" src={IMAGES.img3} />
+                </Card>
+              </div>
             </div>
           </CardColumns>
         </Container>

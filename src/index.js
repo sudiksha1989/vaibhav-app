@@ -5,6 +5,8 @@ import '../node_modules/aos/dist/aos.css';
 import './style/index.scss';
 import App from './component/App';
 import * as serviceWorker from './serviceWorker';
+// import '../src/style/animate.css';
+// import '../src/wow.min.js';
 
 ReactDOM.render(
   <React.StrictMode>
