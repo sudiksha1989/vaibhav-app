@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { IMAGES } from './constant'
+import { IMAGES, STYLE } from './constant'
 
-import { Container, CardColumns, Card, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Container, CardColumns, Card, } from 'react-bootstrap';
 import WOW from "wow.js";
 
 class App extends React.Component {
@@ -10,146 +10,150 @@ class App extends React.Component {
     new WOW().init();
   }
 
-  handleScroll=()=>{
-    
+  handleScroll = () => {
+
   }
 
   render() {
     return (
 
       <>
-        <div class='about-banner-sec'>
-          <Navbar collapseOnSelect fixed="top" expand="lg" bg="black" onScroll={this.handleScroll()} variant="dark">
-            <Navbar.Brand href="#home">
-              <img
-                src={IMAGES.logo}
-                width="50"
-                height="40"
-                className="d-inline-block align-top"
-                alt="React Bootstrap logo"
-              />PerspectivesbyV</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="mr-auto">
-              </Nav>
-              <Nav>
-                <Nav.Link href="#features">Portfolio</Nav.Link>
-                <Nav.Link href="#pricing">Landscape</Nav.Link>
-                <Nav.Link href="#pricing">Prints</Nav.Link>
-                <Nav.Link href="#deets">Contact/About</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-          <div class="about-banner-text wow fadeInUp" data-wow-duration="2s"
-            style={{
-              visibility: 'visible',
-              animationDuration: '2s',
-              animationName: 'fadeInDown',
-            }}>
-            <div class="containerDiv">
-              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                <h1>Welcome</h1>
-                <p>We integrate tech expertise and business intelligence which combines with our role as one of the most trusted consultants for Indian business clients.</p>
-              </div>
-            </div>
+        <div className="sidenav">
+          <div className='site-logo'>
+            <img
+              src={IMAGES.logo}
+              width="50"
+              height="40"
+              className="d-inline-block align-top"
+              alt="logo"
+            />
+            <a href="#">PerspectivesbyV</a>
+          </div>
+          <div className='main-menu'>
+            <a href="#">Portfolio</a>
+            <a href="#">Landscape</a>
+            <a href="#">Prints</a>
+            <a href="#">Contact/About</a>
           </div>
         </div>
-        <Container>
-          <CardColumns>
-            <div className='col_half'>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img1} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img2} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img1} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img2} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
-              </div>
-              <div class="wow fadeInUp" data-wow-duration="2s">
-                <Card >
-                  <Card.Img variant="top" src={IMAGES.img3} />
-                </Card>
+
+        <div className="main">
+          <section class="site-section-hero bg-image" data-stellar-background-ratio="0.5" id="section-home">
+            <div className='about-banner-sec'>
+              <div className="about-banner-text wow fadeInUp" data-wow-duration="2s" style={STYLE.img}>
+                <div className="col-md-7 text-center">
+                  <h1 className="wow fadeInUp">Welcome</h1>
+                  <p className="wow fadeInUp">We integrate tech expertise and business intelligence which combines with our role as one of the most trusted consultants for Indian business clients.</p>
+                </div>
               </div>
             </div>
-          </CardColumns>
-        </Container>
+          </section>
+          <div class="container-fluid">
+
+
+
+            <section class="row align-items-stretch photos" id="section-photos">
+              <Container>
+                <CardColumns>
+                  <div className='col_half'>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img1} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img2} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img1} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img2} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                    <div className="wow fadeInUp" data-wow-duration="2s">
+                      <Card >
+                        <Card.Img variant="top" src={IMAGES.img3} />
+                      </Card>
+                    </div>
+                  </div>
+                </CardColumns>
+              </Container>
+
+            </section>
+          </div>
+        </div>
+
       </>
 
     );

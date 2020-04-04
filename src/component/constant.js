@@ -16,3 +16,11 @@ export const IMAGES = {
     img6: img6,
     logo: logo
 }
+
+export const STYLE = {
+    img: {
+        visibility: 'visible',
+        animationDuration: '2s',
+        animationName: 'fadeInDown',
+    }
+}
